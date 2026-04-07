@@ -32,7 +32,7 @@
 <!-- Framework Figure -->
 ![Framework Overview](./paper/framework.png)
 
-*Figure: Overview of the CASCADE framework — Context-Guided Action Filtering → Stage-Aware Decomposition → Stage-wise Confidence Estimation → Compositional Action Reconstruction.*
+*Figure: Framework of our proposed COLD model. The pipeline consists of Feature Extraction → Cross-modal Highlight Information Bottleneck → Fusion Information Bottleneck → Boundary Prediction.*
 
 </div>
 
@@ -65,23 +65,22 @@
 
 ## 📖 Introduction
 
-Temporal Action Localization (TAL) aims to identify the category and precise temporal boundaries of actions in untrimmed videos. Current Zero-Shot Temporal Action Localization (ZSTAL) methods—whether training-based or training-free—predominantly rely on a **single, unified query** to represent an entire action. This strategy is fundamentally ill-suited for complex, real-world activities, as it fails to capture their **internal compositional structure** and **dynamic multi-stage variations** across videos.
+Temporal Language Grounding (TLG) bridges the correspondence between natural language processing and computer vision, aiming to localize the most related video segment from a complex untrimmed video given a natural language query.
 
-To address this, we reframe ZSTAL as a **compositional reasoning task** and propose **CASCADE** (**C**ontext-**A**ware **S**taged **A**ction **DE**composition), a novel training-free framework. Inspired by the human cognitive process—perceiving global context, decomposing events into stages, and reconstructing action instances—CASCADE:
+Existing cross-modal fusion methods often employ simple mathematical operations or attention mechanisms, which suffer from two critical issues:
 
-1. Leverages an MLLM to **filter irrelevant actions** and generate rich, video-specific captions.
-2. Uses an LLM to **decompose** each caption into temporally ordered key and non-key stages.
-3. Employs the MLLM to perform **stage-wise frame-level confidence estimation**.
-4. Applies a novel **hierarchical merging logic** to reconstruct complete action instances from stage segments.
+1. The generated cross-modal embeddings are affected by noise in their unimodal representations.
 
-Extensive experiments on **THUMOS14** and **ActivityNet-1.3** show that CASCADE sets a new state-of-the-art among training-free methods and, most notably, **significantly surpasses all prior training-based ZSTAL approaches** on ActivityNet-1.3.
+2. The cross-modal representations contain many irrelevant redundancies, compromising the quality of cross-modal features and interfering with accurate moment localization.
+
+To address these drawbacks, we propose a novel Cross-modaL information-constrained (COLD) model. Driven by the Information Bottleneck (IB) principle, our framework simultaneously maximizes the consistent mutual information between the language query and the target video moment, while learning a robust, compressed cross-modal representation devoid of irrelevant redundancies.
 
 ---
 
 ## ✨ Highlights
 
-- 🏆 **Training-Free SOTA**: CASCADE outperforms all prior training-free ZSTAL methods on both THUMOS14 and ActivityNet-1.3.
-- 🚀 **Surpasses Training-Based Methods**: On ActivityNet-1.3, our training-free approach outperforms all training-based ZSTAL competitors (e.g., **+7.0% mAP** over DeTAL under the 75/25 split).
+- 🏆 **Information-Theoretic Perspective**: We pioneer the application of the IB principle in TLG, presenting a novel COLD framework from an information-theoretic viewpoint.
+- 🚀 **Two-Stage Bottleneck Design**: On ActivityNet-1.3, our training-free approach outperforms all training-based ZSTAL competitors (e.g., **+7.0% mAP** over DeTAL under the 75/25 split).
 - 🧠 **Compositional Reasoning**: The first ZSTAL framework to explicitly model the internal stage structure of complex actions via LLM-driven decomposition.
 - 🔌 **Plug-and-Play**: Operates solely with off-the-shelf MLLMs (e.g., Qwen2.5-VL, LLaVA-1.5) and LLMs (e.g., DeepSeek-V3)—no task-specific fine-tuning required.
 
