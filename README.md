@@ -30,7 +30,8 @@
 ---
 
 <!-- Framework Figure -->
-![Framework Overview](./paper/framework.png)
+![Framework Overview](<img width="1375" height="580" alt="image" src="https://github.com/user-attachments/assets/717b0df3-8d23-4bf0-8ee7-d5c5cff051d4" />)
+
 
 *Figure: Framework of our proposed COLD model. The pipeline consists of Feature Extraction → Cross-modal Highlight Information Bottleneck → Fusion Information Bottleneck → Boundary Prediction.*
 
