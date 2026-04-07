@@ -1,6 +1,6 @@
 <div align="center">
   
-# COLD
+# 🎬 COLD
 
 ## Two-Stage Information Bottleneck For Temporal Language Grounding
 
