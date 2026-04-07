@@ -19,7 +19,7 @@
 ---
 
 <!-- Badges -->
-[![ICME](https://img.shields.io/badge/AAAI-2026-blue?style=flat-square)](https://ieeexplore.ieee.org/abstract/document/10687358)
+[![ICME](https://img.shields.io/badge/ICME-2024-blue?style=flat-square)](https://ieeexplore.ieee.org/abstract/document/10687358)
 [![Paper](https://img.shields.io/badge/Paper-PDF-orange?style=flat-square&logo=adobeacrobatreader)](https://ieeexplore.ieee.org/abstract/document/10687358)
 [![GitHub](https://img.shields.io/badge/GitHub-COLD-black?style=flat-square&logo=github)](https://github.com/iLearn-Lab/ICME24-COLD)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%3E%3D2.0-EE4C2C?style=flat-square&logo=pytorch)](https://pytorch.org)
