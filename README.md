@@ -1,4 +1,7 @@
+<div align="center">
+  
 # COLD
+
 ## Two-Stage Information Bottleneck For Temporal Language Grounding
 
 *Official Implementation · ICME 2024*
