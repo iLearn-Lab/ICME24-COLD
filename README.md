@@ -68,10 +68,7 @@
 Temporal Language Grounding (TLG) bridges the correspondence between natural language processing and computer vision, aiming to localize the most related video segment from a complex untrimmed video given a natural language query.
 
 Existing cross-modal fusion methods often employ simple mathematical operations or attention mechanisms, which suffer from two critical issues:
-
-1. The generated cross-modal embeddings are affected by noise in their unimodal representations.
-
-2. The cross-modal representations contain many irrelevant redundancies, compromising the quality of cross-modal features and interfering with accurate moment localization.
+1. The generated cross-modal embeddings are affected by noise in their unimodal representations. 2. The cross-modal representations contain many irrelevant redundancies, compromising the quality of cross-modal features and interfering with accurate moment localization.
 
 To address these drawbacks, we propose a novel Cross-modaL information-constrained (COLD) model. Driven by the Information Bottleneck (IB) principle, our framework simultaneously maximizes the consistent mutual information between the language query and the target video moment, while learning a robust, compressed cross-modal representation devoid of irrelevant redundancies.
 
@@ -87,14 +84,15 @@ To address these drawbacks, we propose a novel Cross-modaL information-constrain
 
 ## 🏗️ Framework Overview
 
-CASCADE consists of four sequential modules:
+The COLD framework executes through four sequential modules:
 
 | Step | Module | Description |
 |------|--------|-------------|
-| 1 | **Context-Guided Action Filtering** | MLLM identifies which actions from the predefined set actually occur in the video. |
-| 2 | **Stage-Aware Decomposition** | MLLM generates a video-specific caption; LLM decomposes it into ordered key/non-key stages. |
-| 3 | **Stage-wise Confidence Estimation** | MLLM computes frame-level confidence scores for each stage in a single batched forward pass. |
-| 4 | **Compositional Action Reconstruction** | A hierarchical merging logic fuses stage segments into complete, coherent action instances. |
+| 1 | **Feature Extraction** | Encodes video frames and language queries using pretrained extractors (I3D, GloVe), followed by intra-modal enhancement and frame-by-word attention. |
+| 2 | **Cross-modal Highlight Information Bottleneck** | Maximizes mutual information between the query and highlighted frames of the target moment to filter out uni-modal noise. |
+| 3 | **Fusion Information Bottleneck** | Learns a minimally sufficient latent cross-modal representation that retains only the information relevant to the localization target. |
+| 4 | **Boundary Prediction** | Estimates frame-level probabilities to predict the start and end boundaries of the target video moment. |
+
 
 ![Video Stage](./paper/video-stage.png)
 
@@ -105,7 +103,7 @@ CASCADE consists of four sequential modules:
 ## 📁 Project Structure
 
 ```
-AAAI26-CASCADE/
+ICME24-COLD/
 ├── annotation/                        # Annotation files for datasets
 │   ├── activity_net.v1-3.min.json     # ActivityNet-1.3 annotations
 │   └── thumos_anno_action.json        # THUMOS14 annotations
