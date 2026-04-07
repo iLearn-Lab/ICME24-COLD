@@ -93,11 +93,6 @@ The COLD framework executes through four sequential modules:
 | 3 | **Fusion Information Bottleneck** | Learns a minimally sufficient latent cross-modal representation that retains only the information relevant to the localization target. |
 | 4 | **Boundary Prediction** | Estimates frame-level probabilities to predict the start and end boundaries of the target video moment. |
 
-
-![Video Stage](./paper/video-stage.png)
-
-> *Figure: Illustration of stage-aware localization. Decomposing "Baking cookies" into sub-stages (cutting chocolate → mixing ingredients → baking) yields significantly more precise localization than a single-query approach.*
-
 ---
 
 ## 📁 Project Structure
@@ -137,8 +132,8 @@ ICME24-COLD/
 
 ```bash
 # Clone the repository
-git clone https://github.com/iLearn-Lab/AAAI26-CASCADE.git
-cd AAAI26-CASCADE
+git clone https://github.com/iLearn-Lab/ICME24-COLD.git
+cd ICME24-COLD
 
 # Create a virtual environment (recommended)
 conda create -n cascade python=3.10 -y
@@ -148,63 +143,21 @@ conda activate cascade
 pip install -r requirements.txt
 ```
 
-### Model Weights
-
-CASCADE is training-free and relies on the following off-the-shelf pretrained models:
-
-| Role | Model | Source |
-|------|-------|--------|
-| Backbone MLLM (option 1) | Qwen2.5-VL-7B | [HuggingFace](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) |
-| Backbone MLLM (option 2) | LLaVA-1.5-7B | [HuggingFace](https://huggingface.co/liuhaotian/llava-v1.5-7b) |
-| Stage Decomposition LLM | DeepSeek-V3 | [DeepSeek API](https://platform.deepseek.com/) |
-
----
-
 ## 📊 Dataset / Benchmark
 
 CASCADE is evaluated on two standard ZSTAL benchmarks:
 
-**THUMOS14**
-- 20 sports action classes, 200 training / 213 test videos.
-- Evaluation at tIoU thresholds: {0.3, 0.4, 0.5, 0.6, 0.7}.
+**TACoS**
+- Focuses on cooking activities.
+- Evaluation metrics: R@1, IoU={0.3, 0.5, 0.7} and mIoU.
 
-**ActivityNet-1.3**
-- 200 action classes, ~20K videos across train/val/test splits.
-- Evaluation at tIoU thresholds: {0.5, 0.75, 0.95}.
-
-Both datasets are evaluated under **75%/25%** and **50%/50%** seen/unseen class splits, averaged over 10 random splits for statistical robustness.
+**ActivityNet Captions**
+- Contains diverse open-domain videos.
+- Evaluation metrics: R@1, IoU={0.3, 0.5} and mIoU.
 
 Please refer to the official dataset pages for download instructions:
-- [THUMOS14](http://crcv.ucf.edu/THUMOS14/)
-- [ActivityNet-1.3](http://activity-net.org/)
-
----
-
-## 🚀 Usage
-
-### Inference
-
-```bash
-# Step 1 — Context-Guided Action Filtering
-python code/1category.py --dataset activitynet --split 75_25
-
-# Step 2 — Video-specific Caption Generation
-python code/2caption.py --dataset activitynet --split 75_25
-
-# Step 3 — Stage-Aware Decomposition (LLM)
-python code/3stage.py --dataset activitynet --split 75_25
-
-# Step 4 — Stage-wise Confidence Estimation
-python code/4localization.py --dataset activitynet --backbone qwen --split 75_25
-
-# Step 5 — Compositional Action Reconstruction
-python code/5merge.py --dataset activitynet --split 75_25
-
-# Step 6 — Evaluation
-python code/6value.py --dataset activitynet --split 75_25
-```
-
-> ⚠️ **Note**: Detailed scripts and configuration files will be released shortly. Please check back or watch the repository for updates.
+- [TACoS](http://crcv.ucf.edu/THUMOS14/)
+- [ActivityNet Captions](http://activity-net.org/)
 
 ---
 
@@ -222,6 +175,8 @@ python code/6value.py --dataset activitynet --split 75_25
 | ZEAL | ✗ | 22.1 | 16.1 | 11.0 | 5.7 | 3.0 | 11.6 |
 | **CASCADE-Qwen (Ours)** | ✗ | 23.9 | 17.5 | 11.7 | 7.6 | 4.3 | **13.0** |
 | **CASCADE-LLaVA (Ours)** | ✗ | 23.8 | 17.9 | 14.0 | 7.6 | 5.1 | **13.7** |
+
+
 
 *Results under the 75%/25% split. Training-free methods in **bold**.*
 
@@ -263,11 +218,14 @@ The figure below shows CASCADE's localization process for the action "Baking coo
 If you find CASCADE useful in your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{tang2026cascade,
-  title     = {Decompose and Conquer: Compositional Reasoning for Zero-Shot Temporal Action Localization},
-  author    = {Tang, Haoyu and Liang, Tianyuan and Jiang, Han and Liu, Xuesong and Zheng, Qinghai and Hu, Yupeng},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2026}
+@inproceedings{tang2024cold,
+  title     = {Two-Stage Information Bottleneck for Temporal Language Grounding},
+  author    = {Tang, Haoyu and Zhang, Shuaike and Yan, Ming and Zhang, Ji and Xu, Mingzhu and Hu, Yupeng and Nie, Liqiang},
+  booktitle = {2024 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages     = {1--6},
+  year      = {2024},
+  organization = {IEEE},
+  doi       = {10.1109/ICME57554.2024.10687358}
 }
 ```
 
@@ -275,7 +233,7 @@ If you find CASCADE useful in your research, please consider citing our paper:
 
 ## 🙏 Acknowledgements
 
-This work was supported in part by the National Natural Science Foundation of China (No. 62206156, No. 62306074, No. 62276155, No. 72004127, No. 62206157); the NSF of Shandong Province (No. ZR2024QF104, No. ZR2021MF040, No. ZR2022QF047); the Key R&D Program of Shandong Province (No. 2022CXGC020107); the Natural Science Basic Research Plan in Shaanxi Province (No. 2025JCJCQN-091); and the Key R&D Program of Shaanxi (No. 2024GX-YBXM-556).
+This work was supported in part by the Alibaba Group through Alibaba Innovative Research Program, No.21169774; in part by the National Natural Science Foundation (NSF) of China, No.62206156, No.62276155, No.72004127, and No.62206157; in part by the NSF of Shandong Province, No.ZR2021MF040 and No.ZR2022QF047; and in part by the Key R&D Program of Shandong Province, China (Major Scientific and Technological Innovation Projects), No.2022CXGC020107.
 
 ---
 
