@@ -67,8 +67,7 @@
 
 Temporal Language Grounding (TLG) bridges the correspondence between natural language processing and computer vision, aiming to localize the most related video segment from a complex untrimmed video given a natural language query.
 
-Existing cross-modal fusion methods often employ simple mathematical operations or attention mechanisms, which suffer from two critical issues:
-1. The generated cross-modal embeddings are affected by noise in their unimodal representations. 2. The cross-modal representations contain many irrelevant redundancies, compromising the quality of cross-modal features and interfering with accurate moment localization.
+Existing cross-modal fusion methods often employ simple mathematical operations or attention mechanisms, which suffer from two critical issues: 1. The generated cross-modal embeddings are affected by noise in their unimodal representations. 2. The cross-modal representations contain many irrelevant redundancies, compromising the quality of cross-modal features and interfering with accurate moment localization.
 
 To address these drawbacks, we propose a novel Cross-modaL information-constrained (COLD) model. Driven by the Information Bottleneck (IB) principle, our framework simultaneously maximizes the consistent mutual information between the language query and the target video moment, while learning a robust, compressed cross-modal representation devoid of irrelevant redundancies.
 
