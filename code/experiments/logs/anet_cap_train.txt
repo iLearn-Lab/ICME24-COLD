@@ -1,0 +1,70 @@
+2023-04-10 12:25:30,306 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-10 12:25:30,306 mlnlp INFO: anet_cap_train
+2023-04-10 12:27:54,834 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-10 12:27:54,834 mlnlp INFO: anet_cap_train
+2023-04-11 00:32:49,249 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 00:32:49,249 mlnlp INFO: anet_cap_train
+2023-04-11 00:43:35,772 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 00:43:35,772 mlnlp INFO: anet_cap_train
+2023-04-11 00:45:34,984 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 00:45:34,984 mlnlp INFO: anet_cap_train
+2023-04-11 01:00:54,749 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 01:00:54,749 mlnlp INFO: anet_cap_train
+2023-04-11 05:27:22,546 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 05:27:22,546 mlnlp INFO: anet_cap_train
+2023-04-11 23:49:32,135 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 23:49:32,182 mlnlp INFO: anet_cap_train
+2023-04-12 05:51:10,445 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 05:51:10,446 mlnlp INFO: anet_cap_train
+2023-04-12 05:54:35,322 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 05:54:35,322 mlnlp INFO: anet_cap_train
+2023-04-12 07:52:46,224 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 07:52:46,224 mlnlp INFO: anet_cap_train
+2023-04-12 12:39:07,644 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 12:39:07,663 mlnlp INFO: anet_cap_train
+2023-04-13 00:53:37,243 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-13 00:53:37,243 mlnlp INFO: anet_cap_train
+2023-04-13 01:12:21,580 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-13 01:12:21,580 mlnlp INFO: anet_cap_train
+2023-04-14 01:07:51,870 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-14 01:07:51,870 mlnlp INFO: anet_cap_train
+2023-04-14 07:50:18,449 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-14 07:50:18,449 mlnlp INFO: anet_cap_train
+2023-04-15 04:59:11,479 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-15 04:59:11,480 mlnlp INFO: anet_cap_train
+2023-04-15 05:20:37,441 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-15 05:20:37,442 mlnlp INFO: anet_cap_train
+2023-04-16 02:32:04,443 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-16 02:32:04,444 mlnlp INFO: anet_cap_train
+2023-04-17 10:25:59,042 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-17 10:25:59,051 mlnlp INFO: anet_cap_train
+2023-04-25 23:52:09,080 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-25 23:52:09,086 mlnlp INFO: anet_cap_train
+2023-04-25 23:54:28,415 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-25 23:54:28,415 mlnlp INFO: anet_cap_train
+2023-04-26 11:15:33,617 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-26 11:15:33,617 mlnlp INFO: anet_cap_train
+2023-04-26 11:34:50,244 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-26 11:34:50,245 mlnlp INFO: anet_cap_train
+2023-04-26 12:41:36,273 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-26 12:41:36,273 mlnlp INFO: anet_cap_train
+2023-04-28 01:34:56,861 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-28 01:34:56,861 mlnlp INFO: anet_cap_train
+2023-05-05 05:15:19,001 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-05 05:15:19,011 mlnlp INFO: anet_cap_train
+2023-05-05 12:19:04,603 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-05 12:19:04,616 mlnlp INFO: anet_cap_train
+2023-05-05 12:19:28,404 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-05 12:19:28,404 mlnlp INFO: anet_cap_train
+2023-05-06 00:26:26,664 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-06 00:26:26,667 mlnlp INFO: anet_cap_train
+2023-05-06 00:30:21,248 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-06 00:30:21,248 mlnlp INFO: anet_cap_train
+2023-05-07 04:16:34,432 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-07 04:16:34,438 mlnlp INFO: anet_cap_train
+2023-05-07 04:18:28,629 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-07 04:18:28,629 mlnlp INFO: anet_cap_train
+2023-05-07 04:19:30,128 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-07 04:19:30,128 mlnlp INFO: anet_cap_train
+2023-05-09 01:46:10,134 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-09 01:46:10,664 mlnlp INFO: anet_cap_train
