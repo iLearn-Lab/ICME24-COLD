@@ -1,0 +1,48 @@
+2023-04-11 00:31:32,353 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 00:31:32,353 mlnlp INFO: tacos_train
+2023-04-11 01:04:22,830 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 01:04:22,830 mlnlp INFO: tacos_train
+2023-04-11 05:24:27,998 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 05:24:27,998 mlnlp INFO: tacos_train
+2023-04-11 23:49:32,255 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-11 23:49:32,256 mlnlp INFO: tacos_train
+2023-04-12 12:39:07,604 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 12:39:07,944 mlnlp INFO: tacos_train
+2023-04-12 14:25:11,210 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 14:25:11,210 mlnlp INFO: tacos_train
+2023-04-12 14:26:16,581 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-12 14:26:16,581 mlnlp INFO: tacos_train
+2023-04-13 00:41:21,659 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-13 00:41:21,659 mlnlp INFO: tacos_train
+2023-04-13 01:11:49,583 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-13 01:11:49,584 mlnlp INFO: tacos_train
+2023-04-13 01:13:48,783 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-13 01:13:48,783 mlnlp INFO: tacos_train
+2023-04-14 01:06:16,356 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-14 01:06:16,356 mlnlp INFO: tacos_train
+2023-04-14 07:49:00,459 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-14 07:49:00,459 mlnlp INFO: tacos_train
+2023-04-15 05:44:40,368 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-15 05:44:40,375 mlnlp INFO: tacos_train
+2023-04-15 13:47:57,618 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-15 13:47:57,618 mlnlp INFO: tacos_train
+2023-04-17 13:08:42,834 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-17 13:08:42,848 mlnlp INFO: tacos_train
+2023-04-25 23:52:17,192 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-25 23:52:17,210 mlnlp INFO: tacos_train
+2023-04-26 11:35:32,070 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-26 11:35:32,070 mlnlp INFO: tacos_train
+2023-04-27 00:43:20,997 mlnlp INFO: Starting moment localization with dynamic filters
+2023-04-27 00:43:20,997 mlnlp INFO: tacos_train
+2023-05-03 04:58:08,287 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-03 04:58:08,298 mlnlp INFO: tacos_train
+2023-05-04 01:28:56,635 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-04 01:28:56,635 mlnlp INFO: tacos_train
+2023-05-04 13:15:11,406 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-04 13:15:11,406 mlnlp INFO: tacos_train
+2023-05-09 01:10:06,266 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-09 01:10:06,278 mlnlp INFO: tacos_train
+2023-05-09 01:11:22,438 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-09 01:11:22,438 mlnlp INFO: tacos_train
+2023-05-09 01:12:36,554 mlnlp INFO: Starting moment localization with dynamic filters
+2023-05-09 01:12:36,554 mlnlp INFO: tacos_train
