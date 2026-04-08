@@ -163,35 +163,11 @@ Please refer to the official dataset pages for download instructions:
 
 ## 📈 Main Results
 
-### THUMOS14
 
-| Method | Training | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | mAP |
-|--------|----------|-----|-----|-----|-----|-----|-----|
-| Eff-Prompt | ✓ | 39.7 | 31.6 | 23.0 | 14.9 | 7.5 | 23.3 |
-| STALE | ✓ | 40.5 | 32.3 | 23.5 | 15.3 | 7.6 | 23.8 |
-| DeTAL | ✓ | 39.8 | 33.6 | 25.9 | 17.4 | 9.9 | 25.3 |
-| T3AL | ✗ | 19.2 | 12.7 | 7.4 | 4.4 | 2.2 | 9.2 |
-| FreeZAD | ✗ | 21.2 | 13.6 | 8.3 | 4.7 | 2.5 | 10.0 |
-| ZEAL | ✗ | 22.1 | 16.1 | 11.0 | 5.7 | 3.0 | 11.6 |
-| **CASCADE-Qwen (Ours)** | ✗ | 23.9 | 17.5 | 11.7 | 7.6 | 4.3 | **13.0** |
-| **CASCADE-LLaVA (Ours)** | ✗ | 23.8 | 17.9 | 14.0 | 7.6 | 5.1 | **13.7** |
-
-
-
-*Results under the 75%/25% split. Training-free methods in **bold**.*
-
-### ActivityNet-1.3
-
-| Method | Training | 0.5 | 0.75 | 0.95 | mAP |
-|--------|----------|-----|------|------|-----|
-| DeTAL | ✓ | 39.3 | 26.4 | 5.0 | 25.8 |
-| FreeZAD | ✗ | 33.5 | 17.5 | 3.9 | 18.3 |
-| **CASCADE-Qwen (Ours)** | ✗ | 41.4 | 27.4 | 7.1 | **25.3** |
-| **CASCADE-LLaVA (Ours)** | ✗ | 52.7 | 36.7 | 8.3 | **32.6** |
 
 *Results under the 75%/25% split. CASCADE-LLaVA surpasses ALL training-based competitors.*
 
-![Scores](./paper/scores.png)
+![Scores](./paper/)
 
 ---
 
@@ -199,7 +175,7 @@ Please refer to the official dataset pages for download instructions:
 
 The figure below shows CASCADE's localization process for the action "Baking cookies" on ActivityNet-1.3. The action is decomposed into four semantic stages (S1: Preparing Ingredients, S2: Mixing Ingredients, S3: Melting Chocolate, S4: Baking). Frame-level confidence scores are computed per stage, thresholded to yield raw proposals (P), and then fused via hierarchical merging into a final prediction (P̂) that closely matches the ground truth (GT).
 
-![Visualization](./paper/video-stage.png)
+![Visualization](./paper/)
 
 ---
 
