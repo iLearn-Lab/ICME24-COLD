@@ -102,7 +102,7 @@ ICME24-COLD/
 ├── annotation/                        # Annotation files for datasets
 │   ├── activity_net.v1-3.min.json     # ActivityNet-1.3 annotations
 │   └── thumos_anno_action.json        # THUMOS14 annotations
-├── code/                              # Core implementation of CASCADE
+├── code/                              # Core implementation of COLD
 │   ├── 1category.py                   # Step 1: Context-Guided Action Filtering
 │   ├── 2caption.py                    # Step 2: Video-specific caption generation
 │   ├── 3stage.py                      # Step 3: Stage-Aware Decomposition (LLM)
@@ -136,8 +136,8 @@ git clone https://github.com/iLearn-Lab/ICME24-COLD.git
 cd ICME24-COLD
 
 # Create a virtual environment (recommended)
-conda create -n cascade python=3.10 -y
-conda activate cascade
+conda create -n cold python=3.10 -y
+conda activate cold
 
 # Install dependencies
 pip install -r requirements.txt
@@ -145,7 +145,7 @@ pip install -r requirements.txt
 
 ## 📊 Dataset / Benchmark
 
-CASCADE is evaluated on two standard ZSTAL benchmarks:
+COLD is evaluated on two standard ZSTAL benchmarks:
 
 **TACoS**
 - Focuses on cooking activities.
@@ -165,17 +165,12 @@ Please refer to the official dataset pages for download instructions:
 
 
 
-*Results under the 75%/25% split. CASCADE-LLaVA surpasses ALL training-based competitors.*
+**
 
 ![Scores](./paper/)
 
 ---
 
-## 🎨 Visualization
-
-The figure below shows CASCADE's localization process for the action "Baking cookies" on ActivityNet-1.3. The action is decomposed into four semantic stages (S1: Preparing Ingredients, S2: Mixing Ingredients, S3: Melting Chocolate, S4: Baking). Frame-level confidence scores are computed per stage, thresholded to yield raw proposals (P), and then fused via hierarchical merging into a final prediction (P̂) that closely matches the ground truth (GT).
-
-![Visualization](./paper/)
 
 ---
 
@@ -191,7 +186,7 @@ The figure below shows CASCADE's localization process for the action "Baking coo
 
 ## 📝 Citation
 
-If you find CASCADE useful in your research, please consider citing our paper:
+If you find COLD useful in your research, please consider citing our paper:
 
 ```bibtex
 @inproceedings{tang2024cold,
